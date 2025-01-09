@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>To Do List</title>
 </head>
 <body>
-    <h1>TO DO LIST</h1>
-    <div class="wrapper">
-        <form>
-            <input id="todo-input" type="text" placeholder="Write Here To Add Into The List" autocomplete="off">
-            <button id="add-button">+</button>
-        </form>
-        <ul id="todo-list">
-            <li class="todo">
-                <input type="checkbox" id="todo-1">
-                <label for="todo-1" class="custom-checkbox">
-                    <!--<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-                        <path d="M382-240 154-468157-57 171 171 367-367 57 57-424 424Z"/>
-                    </svg>-->
-                </label>
-            </li>
-        </ul>
-    </div>
+    <main>
+        <h1>My ToDo List</h1>
+        <div class="input-header">
+            <h1><span id="date"></span></h1>
+            <div class="to-do-input">
+                <input type="text" id="item" placeholder="Enter a Task..."><button id="+">+</button>
+            </div>
+        </div>
+
+        <div class="to-do-list"></div>
+
+
+    </main>
+
+<script src="script.js"></script>
+
+
 </body>
 </html>
